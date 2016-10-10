@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
+    <sprite>sprites\spr_gui_box</sprite>
     <sprites name="atk">
       <sprite>sprites\spr_atk_fire</sprite>
       <sprite>sprites\spr_atk_explode</sprite>
@@ -20,6 +21,7 @@
       <sprite>sprites\spr_nme_target</sprite>
       <sprite>sprites\spr_nme_George</sprite>
       <sprite>sprites\spr_nme_Javert</sprite>
+      <sprite>sprites\spr_nme_Preston</sprite>
     </sprites>
     <sprites name="wpn">
       <sprite>sprites\spr_wpn_sword</sprite>
@@ -32,11 +34,19 @@
     <sprites name="mgk">
       <sprite>sprites\spr_mgk_cure</sprite>
     </sprites>
+    <sprites name="bg">
+      <sprite>sprites\spr_bg_grass</sprite>
+      <sprite>sprites\spr_bg_water</sprite>
+      <sprite>sprites\spr_bg_rock</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_getDistance.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\PixelFont</font>
   </fonts>
@@ -53,6 +63,8 @@
     <objects name="nme">
       <object>objects\obj_nme_target</object>
       <object>objects\obj_nme_George</object>
+      <object>objects\obj_nme_Preston</object>
+      <object>objects\obj_nme_pathfindGrid</object>
     </objects>
     <objects name="wpn">
       <object>objects\obj_wpn_sword</object>
@@ -65,6 +77,12 @@
     <object>objects\obj_playerGUI</object>
     <objects name="mgk">
       <object>objects\obj_mgk_cure</object>
+    </objects>
+    <objects name="bg">
+      <object>objects\obj_bg_grass</object>
+      <object>objects\obj_bg_water</object>
+      <object>objects\obj_bg_rock</object>
+      <object>objects\obj_bg_Map</object>
     </objects>
   </objects>
   <rooms name="rooms">
